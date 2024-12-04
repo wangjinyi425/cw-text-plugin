@@ -1,9 +1,0 @@
-    # def write_config(self, path, section, option, value):  # 写入配置文件
-    #     try:
-    #         with open(path, 'r', encoding='utf-8') as w:
-    #             config = json.load(w)
-    #         config.update({section: {option: value}})
-    #         with open(path, 'w', encoding='utf-8') as w:
-    #             json.dump(config, w, indent=4)
-    #     except Exception as e:
-    #         logger.error(f"插件读取配置文件失败：{e}")
