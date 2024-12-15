@@ -32,4 +32,4 @@
 }
 
 ```
-请在 [PluginPlaza](https://github.com/Class-Widgets/plugin-plaza) 的仓库中提交您的 PR（Pull Requests）。
+之后，在 [PluginPlaza](https://github.com/Class-Widgets/plugin-plaza) 的仓库中提交您的 PR（Pull Requests）。等待审核通过即可完成上架。
