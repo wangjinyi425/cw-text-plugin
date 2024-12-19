@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "plugin_ver": 1,
     "author": "Rin",
+    "settings": true,
 
     "url": "https://github.com/RinLit-233-shiroko/cw-example-plugin",
     "branch": "main",

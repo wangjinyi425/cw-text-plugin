@@ -1,3 +1,2 @@
 from .main import Plugin
-### 若要设置界面生效，必须在此处导入 ###
-from .main import Settings
+from .main import Settings  # 如果有定义设置类，则需要引入

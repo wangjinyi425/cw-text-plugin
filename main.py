@@ -7,7 +7,7 @@ from datetime import datetime
 from .ClassWidgets.base import PluginBase, SettingsBase, PluginConfig  # 导入CW的基类
 
 from PyQt5.QtWidgets import QHBoxLayout
-from qfluentwidgets import ImageLabel, LineEdit  # 可导入本软件使用的所有库
+from qfluentwidgets import ImageLabel, LineEdit
 
 # 自定义小组件
 WIDGET_CODE = 'widget_test.ui'
