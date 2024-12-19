@@ -44,8 +44,12 @@ class PluginConfig:
             self.save_config()
 
     def update_config(self):  # 更新配置
-        with open(self.full_path, 'r', encoding='utf-8') as f:
-            self.config = json.load(f)
+        try:
+            with open(self.full_path, 'r', encoding='utf-8') as f:
+                self.config = json.load(f)
+        except Exception as e:
+            print(f'Error: {e}')
+            self.config = {}
 
     def upload_config(self, key=str or list, value=None):
         if type(key) == str:
