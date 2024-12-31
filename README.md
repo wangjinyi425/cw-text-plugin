@@ -6,8 +6,6 @@
 > 教程正在制作
 
 ## 发布插件
-> [!Note]
-> 需要在您插件的GitHub仓库中创建至少1个Release（上传内容仅需将插件打包为.zip的压缩包），否则将无法在PluginPlaza下载您的插件。
 
 若要发布插件，请克隆 [PluginPlaza](https://github.com/Class-Widgets/plugin-plaza) 的内容到本地。
 然后，打开 `./Plugins/plugin_list.json` 文件，根据格式添加自己的插件内容。格式如下：
