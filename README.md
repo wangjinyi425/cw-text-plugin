@@ -3,7 +3,7 @@
 
 ## 如何使用
 > [!TIP]
-> 教程正在制作
+> 教程可在 [Class Widgets 官网](https://cw.rinlit.cn/)查看开发文档或[点击此链接](https://www.yuque.com/rinlit/cw-docs-dev)
 
 ## 发布插件
 
