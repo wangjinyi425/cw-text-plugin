@@ -1,13 +1,13 @@
 {
-    "name": "Class Widgets 插件示例",
-    "description": "这是一个示例插件。",
-    "version": "1.1.0",
+    "name": "Class Widgets 自定义文本",
+    "description": "帮助你自定义文本。",
+    "version": "1.0.0",
     "plugin_ver": 1,
     "author": "Rin",
     "settings": true,
 
-    "url": "https://github.com/RinLit-233-shiroko/cw-example-plugin",
+    "url": "https://github.com/wangjinyi425/cw-text-plugin",
     "branch": "main",
 
-    "update_date": "2024/12/6"
+    "update_date": "2025/2/15"
 }
