@@ -14,7 +14,7 @@ WIDGET_CODE = 'widget_text.ui'
 WIDGET_NAME = '自定义组件'
 WIDGET_WIDTH = 245
 
-file_w = open(f'{self.PATH}/text.txt','w+')
+file_w = None
 
 class Plugin(PluginBase):  # 插件类
     def __init__(self, cw_contexts, method):  # 初始化
@@ -27,12 +27,13 @@ class Plugin(PluginBase):  # 插件类
         # 小组件自定义（照PyQt的方法正常写）
         logger.success('PluginText executed!')
         logger.info(f'Config path: {self.PATH}')
+        with open(f'{self.PATH}/text.txt','r') as file_w:
+            self.method.change_widget_content(WIDGET_CODE, '文本', file_w.read())
 
     def update(self, cw_contexts):  # 自动更新部分
         super().update(cw_contexts)  # 调用父类更新方法
         self.cfg.update_config()  # 更新配置
-
-        self.method.change_widget_content(WIDGET_CODE, '文本', file_w.read())
+            
 
 
 # 设置页
@@ -41,6 +42,9 @@ class Settings(SettingsBase):
         super().__init__(plugin_path, parent)
         uic.loadUi(f'{self.PATH}/settings.ui', self)  # 加载设置界面
 
+        with open(f'{self.PATH}/text.txt','r') as file_w:
+            self.TextEdit.setPlainText(file_w.read())
         self.PrimaryPushButton.clicked.connect(self.save)
-    def save(self)
-        file_w.write(self.TextEdit.text())
+    def save(self):
+        with open(f'{self.PATH}/text.txt','w+') as file_w:
+            file_w.write(self.TextEdit.toPlainText())
